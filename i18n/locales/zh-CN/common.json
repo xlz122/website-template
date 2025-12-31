@@ -1,0 +1,23 @@
+{
+  "welcome": "欢迎使用 Nuxt.js {version}、Nuxt I18n",
+  "fruits": [
+    "苹果",
+    "香蕉",
+    "橙子",
+    "葡萄",
+    "草莓",
+    "西瓜"
+  ],
+  "students": [
+    {
+      "name": "郑阳",
+      "age": 20,
+      "gender": "男"
+    },
+    {
+      "name": "周芳",
+      "age": 17,
+      "gender": "女"
+    }
+  ]
+}
