@@ -1,0 +1,16 @@
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import Router from './router';
+import { Provider } from 'react-redux';
+import store from './store';
+import './i18n';
+import './assets/styles/global.css';
+
+const root = createRoot(document.getElementById('root') as HTMLElement);
+root.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <Router />
+    </Provider>
+  </React.StrictMode>,
+);

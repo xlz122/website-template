@@ -1,0 +1,23 @@
+{
+  "welcome": "Welcome to React.js {{version}}、I18next、React I18next",
+  "fruits": [
+    "apple",
+    "banana",
+    "orange",
+    "grape",
+    "strawberry",
+    "watermelon"
+  ],
+  "students": [
+    {
+      "name": "Zheng Yang",
+      "age": 20,
+      "gender": "male"
+    },
+    {
+      "name": "Zhou Fang",
+      "age": 17,
+      "gender": "female"
+    }
+  ]
+}
