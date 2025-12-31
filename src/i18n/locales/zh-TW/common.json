@@ -1,0 +1,23 @@
+{
+  "welcome": "歡迎使用 Vue.js {version}、Vue I18n",
+  "fruits": [
+    "蘋果",
+    "香蕉",
+    "柳丁",
+    "葡萄",
+    "草莓",
+    "西瓜"
+  ],
+  "students": [
+    {
+      "name": "鄭陽",
+      "age": 20,
+      "gender": "男"
+    },
+    {
+      "name": "周芳",
+      "age": 17,
+      "gender": "女"
+    }
+  ]
+}
