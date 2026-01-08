@@ -7,7 +7,6 @@
 ## 项目使用技术栈
 
 * Vue
-* Pinia
 * Typescript
 
 ## 接口基础URL

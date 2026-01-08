@@ -3,6 +3,7 @@ import type { ConfigEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import viteCompression from 'vite-plugin-compression';
 import path from 'path';
+import postcssMobileForever from 'postcss-mobile-forever';
 
 export default ({ mode }: ConfigEnv) => {
   const env = loadEnv(mode, process.cwd());
@@ -26,6 +27,19 @@ export default ({ mode }: ConfigEnv) => {
           changeOrigin: true,
           rewrite: (path) => path.replace(new RegExp(`^${env.VITE_APP_BASE_API}`), ''),
         },
+      },
+    },
+    css: {
+      postcss: {
+        plugins: [
+          postcssMobileForever({
+            viewportWidth: 750,
+            mobileUnit: 'vw',
+            maxDisplayWidth: 750,
+            propList: ['*'],
+            selectorBlackList: [],
+          }),
+        ],
       },
     },
     build: {
