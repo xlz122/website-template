@@ -1582,6 +1582,11 @@ picomatch@^4.0.3:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-4.0.3.tgz#796c76136d1eead715db1e7bad785dedd695a042"
   integrity sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==
 
+postcss-mobile-forever@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-mobile-forever/-/postcss-mobile-forever-5.0.0.tgz#dd6209b84e485ced1ab8177a4d4a57768c2239c4"
+  integrity sha512-/kkhxMAd8kNZYeOFaTjhOx7hdfKE7AhJNU7SmlrxJV9fYqbLGrcGQMwXO4aWUvtxBseXwF2+qSMv3j/AZhitNA==
+
 postcss@^8.5.6:
   version "8.5.6"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.5.6.tgz#2825006615a619b4f62a9e7426cc120b349a8f3c"
