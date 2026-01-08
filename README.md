@@ -7,7 +7,6 @@
 ## 项目使用技术栈
 
 * React
-* React Redux
 * TypeScript
 
 ## 接口基础URL
