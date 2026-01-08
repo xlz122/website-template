@@ -1,6 +1,7 @@
 <template>
   <div class="i18n">
     <p>I18n Page</p>
+    <router-link to="/">Jump To Home Page</router-link>
 
     <p>{{ t('common.welcome', { version: '3' }) }}</p>
     <!-- 数组 -->
