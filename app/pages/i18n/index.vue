@@ -1,6 +1,7 @@
 <template>
   <div class="i18n">
     <p>I18n Page</p>
+    <NuxtLink to="/">Jump To Home Page</NuxtLink>
 
     <p>{{ t('common.welcome', { version: '4' }) }}</p>
     <!-- 数组 -->
