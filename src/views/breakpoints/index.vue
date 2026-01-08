@@ -1,0 +1,26 @@
+<template>
+  <div class="breakpoints">
+    <p>Breakpoints Page</p>
+    <router-link to="/">Jump To Home Page</router-link>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.breakpoints {
+  @include maxResponseTo('2xl') {
+    color: #f5222d;
+  }
+
+  @include maxResponseTo('xl') {
+    color: #fa541c;
+  }
+
+  @include maxResponseTo('lg') {
+    color: #fa8c16;
+  }
+
+  @include maxResponseTo('md') {
+    color: #a0d911;
+  }
+}
+</style>

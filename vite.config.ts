@@ -16,6 +16,24 @@ export default ({ mode }: ConfigEnv) => {
         '@': path.resolve(__dirname, './src'),
       },
     },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "@/assets/styles/breakpoints.scss" as *;',
+        },
+      },
+      postcss: {
+        plugins: [
+          postcssMobileForever({
+            viewportWidth: 750,
+            mobileUnit: 'vw',
+            maxDisplayWidth: 750,
+            propList: ['*'],
+            selectorBlackList: [],
+          }),
+        ],
+      },
+    },
     server: {
       open: false,
       host: true,
@@ -27,19 +45,6 @@ export default ({ mode }: ConfigEnv) => {
           changeOrigin: true,
           rewrite: (path) => path.replace(new RegExp(`^${env.VITE_APP_BASE_API}`), ''),
         },
-      },
-    },
-    css: {
-      postcss: {
-        plugins: [
-          postcssMobileForever({
-            viewportWidth: 750,
-            mobileUnit: 'vw',
-            maxDisplayWidth: 750,
-            propList: ['*'],
-            selectorBlackList: [],
-          }),
-        ],
       },
     },
     build: {

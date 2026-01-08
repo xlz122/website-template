@@ -2,6 +2,7 @@
   <div class="home">
     <p>Home Page</p>
     <router-link to="/about">Jump To About Page</router-link>
+    <router-link to="/breakpoints">Jump To Breakpoints Page</router-link>
   </div>
 </template>
 
