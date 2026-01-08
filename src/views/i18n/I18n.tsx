@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import { useTranslation, Trans } from 'react-i18next';
 
 // 加载多个命名空间: useTranslation(['common', 'home'])
@@ -38,6 +39,7 @@ function I18n(): React.ReactElement {
   return (
     <div className="i18n">
       <p>I18n Page</p>
+      <Link to="/">Jump To Home Page</Link>
 
       <p>{t(($) => $.welcome, { version: '19' })}</p>
       {/* 数组 */}

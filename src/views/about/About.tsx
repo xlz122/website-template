@@ -16,7 +16,6 @@ function About(): React.ReactElement {
     <div className="about">
       <p>About Page</p>
       <Link to="/">Jump To Home Page</Link>
-      <Link to="/i18n">Jump To I18n Page</Link>
 
       {Array(6).fill(null).map((_, index) => (
         <LazyImage
