@@ -25,6 +25,15 @@ export default defineNuxtConfig({
       ],
     },
   },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "@/assets/breakpoints.scss" as *;',
+        },
+      },
+    },
+  },
   postcss: {
     plugins: {
       'postcss-mobile-forever': {
@@ -55,5 +64,4 @@ export default defineNuxtConfig({
       },
     },
   },
-  spaLoadingTemplate: true,
 });

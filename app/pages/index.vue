@@ -2,6 +2,7 @@
   <div class="home">
     <p>Home Page</p>
     <NuxtLink to="/about">Jump To About Page</NuxtLink>
+    <NuxtLink to="/breakpoints">Jump To Breakpoints Page</NuxtLink>
   </div>
 </template>
 
