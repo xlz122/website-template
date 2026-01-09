@@ -13,6 +13,9 @@ i18n
     supportedLngs: ['zh-CN', 'zh-TW', 'en-US'],
     fallbackLng: 'zh-CN',
     load: 'currentOnly',
+    interpolation: {
+      escapeValue: false,
+    },
     resources: {
       'zh-CN': zhCN,
       'zh-TW': zhTW,
