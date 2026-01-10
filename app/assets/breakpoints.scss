@@ -8,20 +8,20 @@ $breakpoints: (
   '2xl': 1536px,
 );
 
-// 最大断点混合器 (max-width)
-@mixin maxResponseTo($name) {
-  $max: map.get($breakpoints, $name) - 1px;
-
-  @media (max-width: $max) {
-    @content;
-  }
-}
-
 // 最小断点混合器 (min-width)
 @mixin minResponseTo($name) {
   $min: map.get($breakpoints, $name);
 
   @media (min-width: $min) {
+    @content;
+  }
+}
+
+// 最大断点混合器 (max-width)
+@mixin maxResponseTo($name) {
+  $max: map.get($breakpoints, $name) - 1px;
+
+  @media (max-width: $max) {
     @content;
   }
 }
