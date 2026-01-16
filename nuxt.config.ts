@@ -12,26 +12,10 @@ export default defineNuxtConfig({
           rel: 'preload',
           as: 'font',
           type: 'font/woff2',
-          href: '/fonts/Inter-Regular.woff2',
-          crossorigin: 'anonymous',
-        },
-        {
-          rel: 'preload',
-          as: 'font',
-          type: 'font/woff2',
-          href: '/fonts/Inter-SemiBold.woff2',
+          href: '/fonts/PingFang-Medium.woff2',
           crossorigin: 'anonymous',
         },
       ],
-    },
-  },
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@use "@/assets/breakpoints.scss" as *;',
-        },
-      },
     },
   },
   postcss: {
