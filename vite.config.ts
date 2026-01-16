@@ -17,11 +17,6 @@ export default ({ mode }: ConfigEnv) => {
       },
     },
     css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@use "@/assets/styles/breakpoints.scss" as *;',
-        },
-      },
       postcss: {
         plugins: [
           postcssMobileForever({

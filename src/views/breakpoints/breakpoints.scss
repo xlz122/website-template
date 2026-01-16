@@ -1,3 +1,5 @@
+@use '@/assets/styles/breakpoints.scss' as *;
+
 .breakpoints {
   @include maxResponseTo('2xl') {
     color: #f5222d;
