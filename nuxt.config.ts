@@ -21,18 +21,12 @@ export default defineNuxtConfig({
       title: 'website',
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'stylesheet', type: 'text/css', href: '/styles/global.css' },
         {
           rel: 'preload',
           as: 'font',
           type: 'font/woff2',
-          href: '/fonts/Inter-Regular.woff2',
-          crossorigin: 'anonymous',
-        },
-        {
-          rel: 'preload',
-          as: 'font',
-          type: 'font/woff2',
-          href: '/fonts/Inter-SemiBold.woff2',
+          href: '/fonts/PingFang-Medium.woff2',
           crossorigin: 'anonymous',
         },
       ],
@@ -53,9 +47,8 @@ export default defineNuxtConfig({
         proxy: 'http://localhost:9006/**',
       },
       '/prod-api/**': {
-        proxy: 'http://127.0.0.1:9006/**',
+        proxy: 'http://localhost:9006/**',
       },
     },
   },
-  spaLoadingTemplate: true,
 });
