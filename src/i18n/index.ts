@@ -1,22 +1,22 @@
 import i18n from 'i18next';
+import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
-import zhCN from './locales/zh-CN';
-import zhTW from './locales/zh-TW';
-import enUS from './locales/en-US';
 
 i18n
+  .use(Backend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    debug: true,
+    // debug: true,
     supportedLngs: ['zh-CN', 'zh-TW', 'en-US'],
     fallbackLng: 'zh-CN',
     load: 'currentOnly',
-    resources: {
-      'zh-CN': zhCN,
-      'zh-TW': zhTW,
-      'en-US': enUS,
+    interpolation: {
+      escapeValue: false,
+    },
+    backend: {
+      loadPath: '/src/i18n/locales/{{lng}}/{{ns}}.json',
     },
   });
 

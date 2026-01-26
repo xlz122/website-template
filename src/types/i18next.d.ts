@@ -1,9 +1,13 @@
 import 'i18next';
-import zhCN from '@/i18n/locales/zh-CN';
+import type common from '../i18n/locales/zh-CN/common.json';
+
+interface Resources {
+  common: typeof common;
+}
 
 declare module 'i18next' {
   interface CustomTypeOptions {
     enableSelector: true;
-    resources: typeof zhCN;
+    resources: Resources;
   }
 }
