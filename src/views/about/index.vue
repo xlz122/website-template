@@ -2,7 +2,6 @@
   <div class="about">
     <p>About Page</p>
     <router-link to="/">Jump To Home Page</router-link>
-    <router-link to="/i18n">Jump To I18n Page</router-link>
 
     <template v-for="(_, index) in Array(6).fill(null)" :key="index">
       <img
@@ -28,4 +27,4 @@ console.log('Params:', route.params);
 console.log('Search Params:', route.query);
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped lang="scss"></style>

@@ -1,6 +1,7 @@
 <template>
   <div class="i18n">
     <p>I18n Page</p>
+    <router-link to="/">Jump To Home Page</router-link>
 
     <p>{{ t('common.welcome', { version: '3' }) }}</p>
     <!-- 数组 -->
@@ -31,4 +32,4 @@ import type { MessageSchema, Locale } from '@/i18n';
 const { t, tm } = useI18n<{ message: MessageSchema }, Locale>();
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped lang="scss"></style>
