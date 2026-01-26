@@ -3,6 +3,7 @@ import type { ConfigEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 import viteCompression from 'vite-plugin-compression';
 import path from 'path';
+import postcssMobileForever from 'postcss-mobile-forever';
 
 export default ({ mode }: ConfigEnv) => {
   const env = loadEnv(mode, process.cwd());
@@ -13,6 +14,19 @@ export default ({ mode }: ConfigEnv) => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),
+      },
+    },
+    css: {
+      postcss: {
+        plugins: [
+          postcssMobileForever({
+            viewportWidth: 750,
+            mobileUnit: 'vw',
+            maxDisplayWidth: 750,
+            propList: ['*'],
+            selectorBlackList: [],
+          }),
+        ],
       },
     },
     server: {

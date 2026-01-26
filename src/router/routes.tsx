@@ -31,6 +31,12 @@ const routes: RouteObject[] = [
           Component: async () => (await import('../views/about/About')).default,
         },
       },
+      {
+        path: 'breakpoints',
+        lazy: {
+          Component: async () => (await import('../views/breakpoints/Breakpoints')).default,
+        },
+      },
     ],
   },
   {

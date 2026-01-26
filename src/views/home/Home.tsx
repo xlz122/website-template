@@ -22,7 +22,8 @@ function Home(): React.ReactElement {
   return (
     <div className="home">
       <p>Home Page</p>
-      <Link to="/">Jump To Home Page</Link>
+      <Link to="/about">Jump To About Page</Link>
+      <Link to="/breakpoints">Jump To Breakpoints Page</Link>
 
       <Suspense fallback={<div>Loading...</div>}>
         <Await
