@@ -2,6 +2,7 @@
   <div class="home">
     <p>Home Page</p>
     <NuxtLink to="/about">Jump To About Page</NuxtLink>
+    <NuxtLink to="/breakpoints">Jump To Breakpoints Page</NuxtLink>
   </div>
 </template>
 
@@ -22,4 +23,4 @@ watchEffect(() => {
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped lang="scss"></style>

@@ -14,4 +14,4 @@ console.log('Params:', route.params);
 console.log('Search Params:', route.query);
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped lang="scss"></style>
