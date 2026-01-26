@@ -16,6 +16,11 @@ const routes: RouteRecordRaw[] = [
         name: 'about',
         component: () => import('../views/about/index.vue'),
       },
+      {
+        path: 'breakpoints',
+        name: 'breakpoints',
+        component: () => import('../views/breakpoints/index.vue'),
+      },
     ],
   },
   {

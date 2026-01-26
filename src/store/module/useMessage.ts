@@ -4,10 +4,10 @@ import { defineStore } from 'pinia';
 const useMessage = defineStore('message', () => {
   const message = ref('');
 
-  function setMessage(value: string): void {
+  const setMessage = (value: string) => {
     message.value = value;
     localStorage.setItem('message', JSON.stringify(value));
-  }
+  };
 
   return { message, setMessage };
 });
