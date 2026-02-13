@@ -37,6 +37,7 @@ export default defineNuxtConfig({
     port: 3000,
   },
   runtimeConfig: {
+    baseURL: 'http://localhost:9006',
     public: {
       baseURL: import.meta.env.NODE_ENV === 'development' ? '/dev-api' : '/prod-api',
     },
