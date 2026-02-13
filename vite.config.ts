@@ -11,9 +11,7 @@ export default ({ mode }: ConfigEnv) => {
     base: '',
     plugins: [vue(), viteCompression()],
     resolve: {
-      alias: {
-        '@': path.resolve(__dirname, './src'),
-      },
+      alias: { '@': path.resolve(__dirname, './src') },
     },
     server: {
       open: false,
@@ -35,10 +33,7 @@ export default ({ mode }: ConfigEnv) => {
       rolldownOptions: {
         output: {
           minify: {
-            compress: {
-              dropConsole: true,
-              dropDebugger: true,
-            },
+            compress: { dropConsole: true },
           },
           chunkFileNames: 'static/js/[name]-[hash].js',
           entryFileNames: 'static/js/[name]-[hash].js',
