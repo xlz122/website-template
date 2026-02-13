@@ -1,4 +1,4 @@
-const prettierConfig = {
+export default {
   // 期望换行长度
   printWidth: 100,
   // 语句末尾分号
@@ -14,5 +14,3 @@ const prettierConfig = {
   // 行尾序列符号
   endOfLine: 'auto',
 };
-
-export default prettierConfig;
