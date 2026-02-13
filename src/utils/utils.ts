@@ -1,6 +1,5 @@
 /**
- * @description 获取图片资源
- * @param { string } path - 路径
+ * @description 获取图片路径
  */
 export const getImageUrl = (path: string): string => {
   const modules: Record<string, { default: string }> = import.meta.glob('/src/assets/**/*', {
