@@ -19,8 +19,19 @@ watchEffect(() => {
     return;
   }
 
-  response.value = data.value?.data ?? {};
+  response.value = data.value ?? {};
 });
+
+// const { data, error } = await useFetch<ResponseType>('/api/banner');
+
+// watchEffect(() => {
+//   if (error.value) {
+//     console.log('Error fetching:', error.value);
+//     return;
+//   }
+
+//   response.value = data.value ?? {};
+// });
 </script>
 
 <style scoped lang="scss"></style>
