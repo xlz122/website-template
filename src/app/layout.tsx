@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
-import '../../public/styles/globals.css';
+import '../../public/styles/global.css';
 
 export const metadata: Metadata = {
   title: 'website',
