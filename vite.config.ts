@@ -22,7 +22,7 @@ export default ({ mode }: ConfigEnv) => {
             mobileUnit: 'vw',
             maxDisplayWidth: 750,
             propList: ['*'],
-            selectorBlackList: [],
+            selectorBlackList: ['.ignore'],
           }),
         ],
       },
