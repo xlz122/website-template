@@ -2369,6 +2369,11 @@ possible-typed-array-names@^1.0.0:
   resolved "https://registry.npmmirror.com/possible-typed-array-names/-/possible-typed-array-names-1.1.0.tgz#93e3582bc0e5426586d9d07b79ee40fc841de4ae"
   integrity sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==
 
+postcss-mobile-forever@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npmmirror.com/postcss-mobile-forever/-/postcss-mobile-forever-5.0.0.tgz#dd6209b84e485ced1ab8177a4d4a57768c2239c4"
+  integrity sha512-/kkhxMAd8kNZYeOFaTjhOx7hdfKE7AhJNU7SmlrxJV9fYqbLGrcGQMwXO4aWUvtxBseXwF2+qSMv3j/AZhitNA==
+
 postcss@8.4.31:
   version "8.4.31"
   resolved "https://registry.npmmirror.com/postcss/-/postcss-8.4.31.tgz#92b451050a9f914da6755af352bdc0192508656d"
