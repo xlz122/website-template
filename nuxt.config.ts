@@ -25,7 +25,7 @@ export default defineNuxtConfig({
         mobileUnit: 'vw',
         maxDisplayWidth: 750,
         propList: ['*'],
-        selectorBlackList: [],
+        selectorBlackList: ['.ignore'],
       },
     },
   },
